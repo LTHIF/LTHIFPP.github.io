@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Volkswagen Escarabajo 1963 'Herbie'</title>
+
+    <link rel="icon" href="favicon_io (1)/favicon.ico">
+
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        .image-container {
+            display: flex;
+            align-items: flex-start;
+            margin: auto;
+            gap: 20px;
+        }
+
+        .image-container img {
+            max-width: 90%; /* Ajustado el ancho de la imagen */
+            height: auto;
+        }
+
+        .specs-table {
+            flex: 1;
+            margin-left: 0; 
+        }
+
+        .specs-table table {
+            width: 100%; 
+            border-collapse: collapse;
+            border-spacing: 0;
+            font-size: 1.2em;
+            background-color: inherit; 
+        }
+
+        .specs-table th {
+            padding: 15px;
+            padding-right: 50px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-weight: normal;
+            cursor: pointer;
+            white-space: nowrap;
+            background-color: inherit; 
+            color: white; 
+        }
+
+        .specs-table td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            background-color: inherit;
+            color: white; 
+        }
+
+        .specs-table th.active {
+            font-weight: bold;
+        }
+
+        .specs-table tr:last-child th,
+        .specs-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .specs-table tr:hover {
+            background-color: inherit; 
+        }
+
+        .specs-content {
+            display: none;
+        }
+
+        .specs-content.active {
+            display: table-row;
+            background-color: inherit;
+        }
+
+        .specs-content td {
+            background-color: inherit;
+        }
+
+        /* Estilos para el modal */
+    .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%; /* Ajustado el ancho máximo */
+            max-height: 90%;
+        }
+
+        .modal-content img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body class="is-preload">
+<div id="wrapper">
+    <header id="header">
+        <a href="index.html" class="logo"><strong>Created based</strong> <span>on the Petersen Museum</span></a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <nav id="menu">
+		<ul class="links">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="generic.html">Lincoln Continental de 1963 </a></li>
+			<li><a href="generic1.html">1960 Plymouth XNR</a></li>
+			<li><a href="generic2.html">1965 Chevrolet Impala</a></li>
+			<li><a href="generic4.html">2008 Wayne Enterprises Batpod</a></li>
+			<li><a href="generic5.html">1989 Batimóvil</a></li>
+		</ul>
+	</nav>
+    <div id="main" class="alt">
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1>Volkswagen Escarabajo 1963 'Herbie'</h1>
+                </header>
+                <div class="image-container">
+                    <span class="image main"><img src="images/1963-Volkswagen-Beetle-Herbie.jpg" alt=""/></span> <!-- Ajustado el tamaño de la imagen -->
+                    <div class="specs-table">
+                        <table>
+							<h2>Especificaciones Rápidas</h2>
+                            <tr>
+                                <th onclick="toggleSpec('motor')" id="motorHeader">+ Caballo de Fuerza</th> <!-- Added spaces -->
+                            </tr>
+                            <tr class="specs-content" id="motor">
+                                <td>190 CV (motor modificado para película)</td>
+                            </tr>
+                            <tr>
+                                <th onclick="toggleSpec('designer')" id="designerHeader">+ Velocidad Maxima</th>
+                            </tr>
+                            <tr class="specs-content" id="designer">
+                                <td>138 mph (motor modificado para película)</td>
+                            </tr>
+                            <tr>
+                                <th onclick="toggleSpec('replica')" id="replicaHeader">+ Numero de Vendidos </th>
+                            </tr>
+                            <tr class="specs-content" id="replica">
+                                <td>Puede que solo haya 1 Herbie, pero se vendieron 217,124 Volkswagen Beetles en el año modelo 1963</td>
+                            </tr>
+							<th onclick="toggleSpec('dato')" id="datoHeader">+ Dato Curioso </th>
+                            </tr>
+                            <tr class="specs-content" id="dato">
+                                <td>El número 53 en el auto fue seleccionado en honor a la leyenda de los Dodgers de Los Ángeles y lanzador del Salón de la Fama del Béisbol, Don Drysdale</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p><b>Herbie, el bicho del amor: un símbolo de idealismo y paz</p></b>
+                <p align="Justify">El Beetle de 1963 fue una demostración de la creciente popularidad de Volkswagen en los Estados Unidos. En Estados Unidos se vendieron 217.124 unidades, lo que representó el 62,3% del mercado de importación en ese momento. El apogeo de la popularidad del automóvil se capturó mejor en una cita de la revista Sports Illustrated: "El Volkswagen ha encontrado un hogar en Estados Unidos... Es el coche más fácilmente reconocible del mundo". Fue especialmente popular entre el creciente movimiento contracultural de la década de 1960 al convertirse en un símbolo de idealismo y paz. El precio del modelo de 1963 era el mismo que el del modelo de 1962, pero fue el primer año en que se pudo agregar la opción de un techo corredizo de acero en lugar del de lona. En 1968, era el automóvil más vendido del mundo y en la década de 1970 se convertiría en el primer automóvil en vender más que el Ford Modelo T.
+                Este Volkswagen Beetle de 1963 apareció en la película de 2005 Herbie Fully Loaded, protagonizada por Lindsay Lohan. Un Volkswagen Beetle de 1963 se utilizó para interpretar a Herbie, el bicho del amor, desde la primera película de Herbie en 1969, El bicho del amor. Se añadió un motor modificado a este coche para su uso en secuencias de carreras.
+				Este vehículo aparece en la exposición 'Hollywood Customs: Modified for the Movies'</p>
+            </div>
+        </section>
+    </div>
+
+	<table border="1">
+		<tr>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0009_TED_4999.jpg" alt="Imagen 1" style="width:150px;height:100px;margin-left:30px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0006_TED_5005.jpg" alt="Imagen 2" style="width:150px;height:100px;margin-left:10px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0008_TED_5000.jpg" alt="Imagen 3" style="width:150px;height:100px;margin-left:10px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0007_TED_5004.jpg" alt="Imagen 4" style="width:150px;height:100px;margin-left:30px;" onclick="openModal(this)"></td>
+		</tr>
+		<tr>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0005_TED_5010.jpg" alt="Imagen 5" style="width:150px;height:100px;margin-left:30px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0004_TED_5014.jpg" alt="Imagen 6" style="width:150px;height:100px;margin-left:10px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0003_TED_5015.jpg"  alt="Imagen 7" style="width:150px;height:100px;margin-left:10px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0002_TED_5018.jpg"  alt="Imagen 8" style="width:150px;height:100px;margin-left:30px;" onclick="openModal(this)"></td>
+		</tr>
+		<tr>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0001_TED_5019.jpg" alt="Imagen 9" style="width:150px;height:100px;margin-left:30px;" onclick="openModal(this)"></td>
+			<td><img src="images/1963-volkswagen-beetle-herbie-_0000_TED_5022.jpg" alt="Imagen 10" style="width:150px;height:100px;margin-left:10px;" onclick="openModal(this)"></td>
+		</tr>
+    </table>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01" onclick="event.stopPropagation()">
+    </div>
+
+
+    <script>
+        function toggleSpec(id) {
+            var spec = document.getElementById(id);
+            var header = document.getElementById(id + 'Header');
+            var isActive = spec.classList.contains('active');
+
+            var specs = document.getElementsByClassName('specs-content');
+            var headers = document.querySelectorAll('.specs-table th');
+
+            for (var i = 0; i < specs.length; i++) {
+                specs[i].classList.remove('active');
+            }
+
+            for (var j = 0; j < headers.length; j++) {
+                headers[j].textContent = headers[j].textContent.replace('-', '+');
+            }
+
+            if (!isActive) {
+                spec.classList.add('active');
+                header.textContent = header.textContent.replace('+', '-');
+            } else {
+                header.textContent = header.textContent.replace('-', '+');
+            }
+        }
+    // Abre el modal
+    function openModal(element) {
+                        var modal = document.getElementById("myModal");
+                        var modalImg = document.getElementById("img01");
+                
+                        modal.style.display = "block";
+                        modalImg.src = element.src;
+                        modalImg.parentElement.style.display = "flex";
+                    }
+                
+                    // Cierra el modal
+                    function closeModal() {
+                        var modal = document.getElementById("myModal");
+                        modal.style.display = "none";
+                    }
+                </script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</div>
+</body>
+</html>
